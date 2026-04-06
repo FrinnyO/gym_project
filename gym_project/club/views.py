@@ -72,7 +72,7 @@ def export_pdf(request):
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="gym_report.pdf"'
 
-    font_path = "C:\\Windows\\Fonts\\arial.ttf"
+    font_path = "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf"
 
     pdfmetrics.registerFont(TTFont('ArialCustom', font_path))
 
